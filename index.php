@@ -12,12 +12,26 @@ $usuarios = $sql -> select("SELECT * FROM tb_usuarios");
 
 
 echo json_encode($usuarios);*/
-
-$saldanha = new Usuario();
-
+// carrega um usuário
+/*$saldanha = new Usuario();
 $saldanha -> loadById(5);
+echo $saldanha; */
 
-echo $saldanha;
+//carrega uma lista de usuários
+/*$lista = Usuario::getList();
+
+echo json_encode($lista); */
+
+/*// Carrega uma lista de usuários buscando pelo login
+$busca = Usuario::search("er");
+
+echo json_encode($busca); */
+
+//Carrega um usuário usando o login e a senha
+$usuario = new Usuario();
+$usuario -> login("saldanha","123456789");
+
+echo $usuario;
 
 
 ?>
