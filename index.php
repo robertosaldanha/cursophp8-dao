@@ -2,7 +2,7 @@
 
 require_once("config.php");
 
-$sql = new Banco();
+/*$sql = new Banco();
 
 $usuarios = $sql -> select("SELECT * FROM tb_usuarios");
 
@@ -11,7 +11,13 @@ $usuarios = $sql -> select("SELECT * FROM tb_usuarios");
 //print_r($usuarios);
 
 
-echo json_encode($usuarios);
+echo json_encode($usuarios);*/
+
+$saldanha = new Usuario();
+
+$saldanha -> loadById(5);
+
+echo $saldanha;
 
 
 ?>
