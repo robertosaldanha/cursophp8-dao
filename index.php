@@ -35,9 +35,15 @@ echo json_encode($usuarios);*/
 //echo $user;
 
 //Update em um usuário
+//$user = new Usuario();
+//$user -> loadById(15);
+//$user -> update("dianedark", "fianne155!");
+//echo $user;
+
+//Delete de um usuário
 $user = new Usuario();
-$user -> loadById(15);
-$user -> update("dianedark", "fianne155!");
+$user -> loadById(7);
+$user -> delete();
 echo $user;
 
 ?>
